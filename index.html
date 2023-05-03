@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skull!</title>
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+      }
+      .container {
+        position: relative;
+        border: 5px solid #0275d8;
+      }
+      .centered {
+        position: absolute;
+        margin-top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+      }
+      .centered button {
+        margin-bottom: 10px;
+        border-color: #007bff;
+      }
+      .centered img {
+        margin: 20px 0;
+        max-width: 100%;
+        max-height: 300px;
+      }
+
+      .container.border {
+        border: 2px solid #007bff;
+        padding: 20px;
+        margin-bottom: 20px; /* Add margin to create space */
+        text-align: center;
+      }
+      #logo {
+        display: block;
+        margin: 10px auto;
+        max-width: 15%;
+        height: auto;
+      }
+
+      #objectImage {
+        max-width: 50%;
+        max-height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="logo" src="assets\Logo.jpg" alt="Logo" />
+
+    <div class="container border">
+      <h1>All You Need To Know About Skull!</h1>
+      <p>
+        skull, skeletal framework of the head of vertebrates, composed of bones
+        or cartilage, which form a unit that protects the brain and some sense
+        organs. The upper jaw, but not the lower, is part of the skull. The
+        human cranium, the part that contains the brain, is globular and
+        relatively large in comparison with the face. In most other animals the
+        facial portion of the skull, including the upper teeth and the nose, is
+        larger than the cranium. In humans the skull is supported by the highest
+        vertebra, called the atlas, permitting nodding motion. The atlas turns
+        on the next-lower vertebra, the axis, to allow for side-to-side motion.
+      </p>
+      <img id="objectImage" src="assets\5.jpeg" alt="Lungs" />
+      <div class="centered">
+        <a href="Model Page.html" target="_blank">
+          <button type="button" class="btn btn-primary">
+            Learn From Skull 3d Model!
+          </button>
+        </a>
+
+        <audio id="audioPlayer">
+          <source src="assets\Skull.m4a" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <button type="button" class="btn btn-primary" onclick="playAudio()">
+          Play Audio For Illustration!
+        </button>
+
+        <a href="https://en.wikipedia.org/wiki/Skull" target="_blank">
+          <button type="button" class="btn btn-primary">
+            Additional Resources
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Add Bootstrap JS -->
+    <script>
+      function playAudio() {
+        var audioPlayer = document.getElementById("audioPlayer");
+        audioPlayer.play();
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
